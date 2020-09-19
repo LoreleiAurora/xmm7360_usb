@@ -23,5 +23,8 @@ dkms-add:
 dkms-build:
 	/usr/sbin/dkms build xmm7360_usb/1.0
 
+dkms-build:
+	/usr/sbin/dkms install xmm7360_usb/1.0
+
 dkms-remove:
 	/usr/sbin/dkms remove xmm7360_usb/1.0 --all
