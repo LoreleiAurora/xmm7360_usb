@@ -1,6 +1,6 @@
 obj-m := xmm7360_usb.o
 
-KVERSION := $(shell uname -r)
+KVERSION := $(shell /bin/uname -r)
 KDIR := /lib/modules/$(KVERSION)/build
 PWD := $(shell pwd)
 
