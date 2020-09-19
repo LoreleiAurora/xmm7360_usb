@@ -18,7 +18,7 @@ load:
 	/sbin/insmod xmm7360.ko
 
 dkms-add:
-	/usr/sbin/dkms add $(CURDIR)
+	/usr/sbin/dkms add xmm7360_usb/1.0
 
 dkms-build:
 	/usr/sbin/dkms build xmm7360_usb/1.0
