@@ -16,3 +16,12 @@ install:
 load:
 	-/sbin/rmmod xmm7360
 	/sbin/insmod xmm7360.ko
+
+dkms-add:
+	/usr/sbin/dkms add $(CURDIR)
+
+dkms-build:
+	/usr/sbin/dkms build xmm7360_usb/1.0
+
+dkms-remove:
+	/usr/sbin/dkms remove xmm7360_usb/1.0 --all
